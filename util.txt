@@ -1,0 +1,12 @@
+# ativar venv gitbash: source venv/Scripts/activate
+
+# pip freeze > requirements.txt
+
+#Ativar projeto: django-admin startproject setup .
+
+# Subir o servidor: python manage.py runserver
+
+
+Alterar linguagem e hoarario: na pasta setup no arquivo settings.py role ate achar lenguage-code e timezone
+# a linguagem vai ser pt-br
+# timezone 'America/Sao_Paulo'
