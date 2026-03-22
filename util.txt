@@ -1,4 +1,6 @@
-# ativar venv gitbash: source venv/Scripts/activate
+# Instalando o virtualenv: pip install virtualenv
+
+# Ativar venv gitbash: source venv/Scripts/activate
 
 # pip freeze > requirements.txt
 
@@ -6,7 +8,19 @@
 
 # Subir o servidor: python manage.py runserver
 
+# Baixar Python-dotenv serve para carregar variáveis de ambiente a partir de um arquivo chamado .env
+from dotenv import load_dotenv
+import os
 
-Alterar linguagem e hoarario: na pasta setup no arquivo settings.py role ate achar lenguage-code e timezone
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY")
+
+isso vou colocar na pasta settings do setup, em baixo do from pathlib import Path,os
+
+# Alterar linguagem e hoarario: na pasta setup no arquivo settings.py role ate achar lenguage-code e timezone
 # a linguagem vai ser pt-br
 # timezone 'America/Sao_Paulo'
+
+#startproject = é todas as configuraçoes do projeto
+#startapp = é todas as funçoes do projeto
